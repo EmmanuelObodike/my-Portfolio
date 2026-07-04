@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio website for a creative developer building useful digital products.">
+    <title>Alex Morgan | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/styles.css" rel="stylesheet">
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#siteNav" data-bs-offset="90" tabindex="0">
+    <nav id="siteNav" class="navbar navbar-expand-lg fixed-top navbar-glass">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">
+          <span class="brand-mark"> I AM</span>
+          EMMANUEL OBODIKE
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item">
+              <button id="themeToggle" class="btn btn-icon" type="button" aria-label="Toggle dark mode" title="Toggle theme">
+                <i class="bi bi-moon-stars"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="home" class="hero-section">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <p class="eyebrow mb-3">Product-minded Frontend Developer</p>
+              <h1 class="display-4 fw-bold lh-1 mb-4">I build fast, polished web experiences that make products easier to use.</h1>
+              <p class="lead text-secondary mb-4">I turn messy ideas into responsive interfaces, clean interactions, and maintainable code. Currently focused on dashboards, SaaS tools, and delightful everyday workflows.</p>
+              <div class="d-flex flex-wrap gap-3 mb-5">
+                <a href="#work" class="btn btn-primary btn-lg">
+                  <i class="bi bi-grid-1x2-fill me-2"></i>View work
+                </a>
+                <a href="#contact" class="btn btn-outline-dark btn-lg">
+                  <i class="bi bi-send me-2"></i>Hire me
+                </a>
+              </div>
+              <div class="row g-3 hero-stats">
+                <div class="col-4">
+                  <strong data-count="18">0</strong>
+                  <span>Projects</span>
+                </div>
+                <div class="col-4">
+                  <strong data-count="6">0</strong>
+                  <span>Years</span>
+                </div>
+                <div class="col-4">
+                  <strong data-count="12">0</strong>
+                  <span>Clients</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="hero-visual" aria-label="Portfolio preview illustration">
+                <img src="assets/portfolio-preview.svg" alt="Stylized portfolio dashboard preview" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section-pad">
+        <div class="container">
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 mb-4">
+            <div>
+              <p class="eyebrow mb-2">Selected work</p>
+              <h2 class="section-title mb-0">Recent Projects</h2>
+            </div>
+            <div class="btn-group project-filter" role="group" aria-label="Project filters">
+              <button class="btn btn-sm btn-dark active" type="button" data-filter="all">All</button>
+              <button class="btn btn-sm btn-outline-dark" type="button" data-filter="web">Web</button>
+              <button class="btn btn-sm btn-outline-dark" type="button" data-filter="ui">UI</button>
+              <button class="btn btn-sm btn-outline-dark" type="button" data-filter="data">Data</button>
+            </div>
+          </div>
+
+          <div class="row g-4" id="projectGrid">
+            <div class="col-md-6 col-xl-4 project-item" data-category="web">
+              <article class="project-card h-100">
+                <div class="project-art art-teal">
+                  <i class="bi bi-kanban"></i>
+                </div>
+                <div class="p-4">
+                  <div class="d-flex justify-content-between gap-3 mb-2">
+                    <h3 class="h5 mb-0">TaskFlow</h3>
+                    <span class="badge text-bg-light">Web App</span>
+                  </div>
+                  <p class="text-secondary">A focused project management workspace with sprint views, quick capture, and team progress reporting.</p>
+                  <div class="stack-list">
+                    <span>Bootstrap</span><span>JavaScript</span><span>API</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-xl-4 project-item" data-category="ui">
+              <article class="project-card h-100">
+                <div class="project-art art-coral">
+                  <i class="bi bi-phone"></i>
+                </div>
+                <div class="p-4">
+                  <div class="d-flex justify-content-between gap-3 mb-2">
+                    <h3 class="h5 mb-0">Banking Redesign</h3>
+                    <span class="badge text-bg-light">UI Kit</span>
+                  </div>
+                  <p class="text-secondary">A mobile-first finance interface with cleaner transaction states, card controls, and accessible forms.</p>
+                  <div class="stack-list">
+                    <span>Figma</span><span>Design System</span><span>WCAG</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-xl-4 project-item" data-category="data">
+              <article class="project-card h-100">
+                <div class="project-art art-gold">
+                  <i class="bi bi-bar-chart-line"></i>
+                </div>
+                <div class="p-4">
+                  <div class="d-flex justify-content-between gap-3 mb-2">
+                    <h3 class="h5 mb-0">Pulse Analytics</h3>
+                    <span class="badge text-bg-light">Dashboard</span>
+                  </div>
+                  <p class="text-secondary">An operations dashboard that turns scattered growth metrics into quick, readable decision views.</p>
+                  <div class="stack-list">
+                    <span>Charts</span><span>JavaScript</span><span>UX</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section-pad muted-band">
+        <div class="container">
+          <div class="row g-5 align-items-start">
+            <div class="col-lg-5">
+              <p class="eyebrow mb-2">Capabilities</p>
+              <h2 class="section-title mb-3">What I Bring</h2>
+              <p class="text-secondary">I work across frontend engineering, interface design, and product thinking. The sweet spot is shipping interfaces that feel obvious after they exist.</p>
+            </div>
+            <div class="col-lg-7">
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <div class="skill-card">
+                    <i class="bi bi-code-slash"></i>
+                    <h3 class="h5">Frontend Development</h3>
+                    <p>Responsive layouts, component systems, browser polish, and practical performance work.</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="skill-card">
+                    <i class="bi bi-palette2"></i>
+                    <h3 class="h5">UI Design</h3>
+                    <p>Clean screens, design systems, interaction states, and interfaces built for real users.</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="skill-card">
+                    <i class="bi bi-lightning-charge"></i>
+                    <h3 class="h5">JavaScript</h3>
+                    <p>Interactive filters, forms, stateful UI, data handling, and small automations.</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="skill-card">
+                    <i class="bi bi-people"></i>
+                    <h3 class="h5">Product Collaboration</h3>
+                    <p>Translating goals into flows, tradeoffs, prototypes, and shippable milestones.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section-pad">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-5">
+              <div class="about-panel">
+                <div class="avatar">AM</div>
+                <h2 class="h3 mt-4">Hi, I am Alex.</h2>
+                <p class="text-secondary mb-0">A developer with a designer's eye and a builder's bias for getting useful things in front of people.</p>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <p class="eyebrow mb-2">About</p>
+              <h2 class="section-title mb-3">I care about the small details that make software feel trustworthy.</h2>
+              <p class="text-secondary">My work usually sits between product strategy and implementation. I enjoy shaping vague requirements into flows, building the interface, then refining the little pieces: empty states, loading behavior, keyboard affordances, and the words users actually see.</p>
+              <div class="row g-3 mt-3">
+                <div class="col-sm-6">
+                  <div class="mini-proof">
+                    <strong>Based in</strong>
+                    <span>Lagos, Nigeria</span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="mini-proof">
+                    <strong>Available for</strong>
+                    <span>Freelance and remote roles</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-pad contact-band">
+        <div class="container">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-6">
+              <p class="eyebrow mb-2">Contact</p>
+              <h2 class="section-title mb-3">Have a project in mind?</h2>
+              <p class="text-secondary mb-4">Send a message and I will reply with next steps, availability, and a few useful questions.</p>
+              <div class="d-flex flex-wrap gap-3 social-links">
+                <a href="https://github.com/" target="_blank" rel="noreferrer"><i class="bi bi-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                <a href="mailto:obodikeemmanuel@gmail.com.com"><i class="bi bi-envelope"></i> Email</a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <form id="contactForm" class="contact-form">
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <label for="name" class="form-label">Name</label>
+                    <input id="name" name="name" type="text" class="form-control" required>
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input id="email" name="email" type="email" class="form-control" required>
+                  </div>
+                  <div class="col-12">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary btn-lg w-100" type="submit">
+                      <i class="bi bi-send-fill me-2"></i>Send message
+                    </button>
+                  </div>
+                </div>
+                <div id="formAlert" class="alert alert-success mt-3 d-none" role="alert">
+                  Thanks. Your message is ready to send.
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-4">
+      <div class="container d-flex flex-column flex-sm-row justify-content-between gap-2 text-secondary">
+        <span>© <span id="year"></span> Alex Morgan.</span>
+        <span>Built with Bootstrap and JavaScript.</span>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
